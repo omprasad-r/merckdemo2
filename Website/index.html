@@ -1,0 +1,77 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+@section addStyle{
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="~/Content/jquery.bxslider.js"></script>
+    <link href="~/Content/jquery.bxslider.css" rel="stylesheet" />
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').bxSlider();
+        });
+    </script>
+
+}
+
+
+@section title{
+    Altın Dokunuş
+}
+
+@section main{
+
+
+    <link href="~/Content/jquery.bxslider.css" rel="stylesheet" />
+
+    <div class="clearfix" style="margin-bottom:7%"></div>
+
+    <div class="bx-wrapper" style="max-width: 100%;">
+        <div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; ">
+            <div><img data-u="image" src="img/Slider_Altin_Dokunus.jpg"></div>
+
+        </div>
+        <div class="bx-controls bx-has-controls-direction bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev disabled" href="">Prev</a><a class="bx-next disabled" href="">Next</a></div><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div></div></div>
+    </div>
+
+
+    <div class="row pdt30">
+        <div class="col-md-12"><p>ALTIN DOKUNUŞ, Merck Hayvan Sağlığı Kanatlı Bölümü olarak, yumurtacı iş alanına sunduğumuz teknik servislerin ve pazarlama destek programlarının tek çatı altında birleştirildiği <b>Türkiye’nin İlk Yumurtacı Değer Servisi’dir.</b></p></div>
+        <div class="col-md-4 linksHome text-center">
+            <div class="around pdt20">
+                <img class="img-responsive" src="~/img/1.jpg" alt="image 1" />
+                <h2>Altın Dokunuş Nedir?</h2>
+                @Html.ActionLink("Tıklayınız", "Hakkımızda", "Hakkımızda", new { }, new { @class = "discover" })
+            </div>
+        </div>
+
+        <div class="col-md-4 linksHome text-center">
+            <div class="around pdt20">
+                <img class="img-responsive" src="~/img/ALTIN DESTEK.png" alt="Altın Dokunuş" />
+                <h2>Altın Dokunuş Servisleri</h2>
+                @Html.ActionLink("Tıklayınız", "AltınServisler", "AltınServisler", new { }, new { @class = "discover" })
+            </div>
+        </div>
+
+        <div class="col-md-4 linksHome text-center">
+            <div class="around pdt20">
+                <img class="img-responsive" src="~/img/3.png" alt="Altın Dokunuş" />
+                <h2>Altın Dijital </h2>
+                @Html.ActionLink("Tıklayınız", "AltınDijital", "AltınDijital", new { }, new { @class = "discover" })
+            </div>
+        </div>
+
+    </div>
+    <div class="row pdt30">
+
+    </div>
+
+}
+
+@section articleLinks{
+
+}
+
+
+
